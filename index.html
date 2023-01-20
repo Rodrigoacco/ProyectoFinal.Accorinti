@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/style.css">
+    <title>Películas</title>
+</head>
+<body class="modo-claro">
+    <nav class="navegation">
+        <label class="buttom" for="claro-oscuro">
+            <input type="checkbox" id="claro-oscuro">
+            <span class="slider"></span>
+        </label>
+        <h1>
+            The Movie Store
+        </h1>
+        <button id="logout">
+            Cerrar sesión
+        </button>
+    </nav>
+    <main>
+        <div class="formato-inicio">   
+            <div class="box">
+                <span>
+                    <div class="inicio">
+                        <div class="container-login">
+                            <h1 class="titulo-login">
+                                Bienvenido
+                            </h1>
+                            <form id="login">
+                                <div class="inputbox">
+                                    <input required="required" type="text" id="input-user" autocomplete="off">
+                                    <span>Usuario</span>
+                                    <i></i>
+                                </div>
+                                <div class="inputbox">
+                                    <input required="required" id="input-pass" type="password" autocomplete="off">
+                                    <span>Contraseña</span>
+                                    <i></i>
+                                </div>
+                                <label class="submit-buttom">
+                                    <input type="submit" value="Ingresar" class="input-buttom">
+                                </label>
+                                <p id="logint">
+                                    El usuario o la contraseña son incorrectas.
+                                </p>
+                            </form>            
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div id="spinner" class="spinner-border text-light" role="status">
+                <span class="loader">L &nbsp; ading</span>
+            </div>
+            <button id="inicio">
+                <span class="inicio">inicio</span>
+            </button>
+            <div class="buscador">
+                <label>
+                    <input type="text" name="search" placeholder="Buscar"     id="search" autocomplete="off" class="input">
+                </label>
+                <label>
+                    <input type="submit" value="Buscar">
+                </label>
+                <button id="primerPagina" class="primerPagina"> Primer página</button>
+                <button id="atras" class="atras"> Atras </button>
+                <button id="siguiente" class="siguiente"> Siguiente </button>
+                <button id="ultimaPagina" class="ultimaPagina"> Última página</button>
+            </div>
+            <div class="movie">
+                
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
